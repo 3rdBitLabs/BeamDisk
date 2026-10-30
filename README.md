@@ -32,7 +32,7 @@
 
 ## What is BeamDisk?
 
-BeamDisk connects a Mac with Apple Silicon to iSCSI storage on a server or SAN. The disk shows up in Finder, Disk Utility and Time Machine like a drive plugged into the Mac, easily saturating a 10 Gigabit Ethernet connection, and needs no kernel extension or change to the Mac's security settings. It's free to download and free for home use; business use needs a license.
+BeamDisk connects a Mac with Apple Silicon to iSCSI storage on a server, a NAS, or SAN. The disk shows up in Finder, Disk Utility and Time Machine like a drive plugged into the Mac, easily saturating a 10 Gigabit Ethernet connection, and needs no kernel extension or change to the Mac's security settings. It's free to download and free for home use; business use needs a license.
 
 <p align="center">
   <picture>
