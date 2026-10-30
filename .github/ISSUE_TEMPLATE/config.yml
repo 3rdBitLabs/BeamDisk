@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussions and community help
+    url: https://github.com/3rdBitLabs/BeamDisk/discussions
+    about: Ask for help, share tips, post Test Speed results, or chat with other BeamDisk users.
+  - name: Private support
+    url: https://beamdisk.app/contact/?category=support
+    about: Get help without posting your setup publicly.
+  - name: Documentation
+    url: https://beamdisk.app/docs/
+    about: Installing, adding disks, Time Machine, troubleshooting and settings.
+  - name: Report a security vulnerability
+    url: https://github.com/3rdBitLabs/BeamDisk/security/advisories/new
+    about: Disclose security issues privately. Do NOT file a public issue for security bugs.

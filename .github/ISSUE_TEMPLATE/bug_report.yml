@@ -1,0 +1,92 @@
+name: Bug report
+description: Report a bug or unexpected behavior in BeamDisk.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. The more specific you can be, the faster we can reproduce and fix it.
+
+        **Never post your CHAP secrets.** You may want to replace your server's address and target names with placeholders: this issue is public. If you'd rather not share your setup publicly, use the [contact form](https://beamdisk.app/contact/?category=support) instead.
+
+        For questions or help, please use [Discussions](https://github.com/3rdBitLabs/BeamDisk/discussions).
+
+  - type: input
+    id: version
+    attributes:
+      label: BeamDisk version
+      description: BeamDisk → About BeamDisk, with the window in front.
+      placeholder: "0.9.0"
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: Mac model and macOS version
+      placeholder: "Mac mini M4, macOS 27.0.1"
+    validations:
+      required: true
+
+  - type: input
+    id: server
+    attributes:
+      label: Storage server and its software version
+      placeholder: "TrueNAS 25.10, or Linux LIO / targetcli on Debian 13"
+    validations:
+      required: true
+
+  - type: input
+    id: network
+    attributes:
+      label: How the Mac and the server are connected
+      placeholder: "10 GbE, wired, MTU 9000, one switch"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: state
+    attributes:
+      label: The disk's state and last event
+      description: The disk's state in BeamDisk and since when, and the **Last event** on its page, with its time.
+      placeholder: |
+        Reconnecting since 2:14 PM
+        Last event: 2:14 PM · the server stopped responding
+
+  - type: textarea
+    id: messages
+    attributes:
+      label: Recent messages
+      description: Click the clock button at the bottom of BeamDisk's sidebar. Each message's text can be selected and copied; include their times.
+      render: text
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: If you can reproduce it reliably, list the steps. If not, describe what you were doing when it happened.
+      placeholder: |
+        1. Add the disk ...
+        2. Copy ...
+        3. See ...
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-flight checks
+      options:
+        - label: I searched existing issues and found no duplicate.
+          required: true
+        - label: I am running the latest version of BeamDisk.
+          required: false
+        - label: This report contains no CHAP secrets.
+          required: true

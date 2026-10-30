@@ -1,0 +1,115 @@
+title: "[Benchmark] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Share your Test Speed results
+        Real numbers from real setups help other people choose a server, disks and network. Run **Test Speed** on a disk (see [Test your disk's speed](https://beamdisk.app/docs/performance/test-speed/)), then fill in what it ran on.
+
+        Please leave out your server's address and target names.
+
+  - type: markdown
+    attributes:
+      value: "### Mac"
+
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model, chip and memory
+      placeholder: "e.g. Mac mini M4, 16 GB"
+    validations:
+      required: true
+
+  - type: input
+    id: versions
+    attributes:
+      label: macOS and BeamDisk versions
+      placeholder: "e.g. macOS 27.0.1, BeamDisk 0.9.0"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### Storage"
+
+  - type: input
+    id: server
+    attributes:
+      label: Storage server or SAN, and its software version
+      placeholder: "e.g. TrueNAS 25.10 on a Ryzen 7 with 64 GB"
+    validations:
+      required: true
+
+  - type: input
+    id: pool
+    attributes:
+      label: What's behind the LUN
+      description: The pool or disks, their layout, and anything that matters for speed (cache devices, sync settings, volume block size).
+      placeholder: "e.g. 4× NVMe SSD in two mirrors, zvol with 16 KiB blocks, sync=standard"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: filesystem
+    attributes:
+      label: File system on the disk
+      options:
+        - APFS
+        - Mac OS Extended (Journaled)
+        - Other (describe in Comments)
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### Network"
+
+  - type: dropdown
+    id: link
+    attributes:
+      label: Link speed
+      options:
+        - 1 GbE
+        - 2.5 GbE
+        - 5 GbE
+        - 10 GbE
+        - 25 GbE or faster
+        - Other (describe in Comments)
+    validations:
+      required: true
+
+  - type: input
+    id: network
+    attributes:
+      label: MTU, and what's between the Mac and the server
+      placeholder: "e.g. MTU 9000, one 10 GbE switch, Thunderbolt adapter on the Mac"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### Results"
+
+  - type: textarea
+    id: results
+    attributes:
+      label: Test Speed results
+      description: Paste or attach a screenshot of the results, or type each test's result.
+      placeholder: |
+        Sequential write:
+        Sequential read:
+        Random write, 16 KiB:
+        Random write, 4 KiB:
+        Random read, 16 KiB:
+        Random read, 4 KiB:
+        Read latency, 4 KiB:
+        Synced writes, 4 KiB:
+    validations:
+      required: true
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      description: Anything else worth noting - other load on the server or network while testing, settings you changed, how it compares with other initiators you've used.

@@ -1,0 +1,63 @@
+title: "[Help] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Need help getting BeamDisk working, or stuck on a problem? Fill out the basics below and someone in the community (or a maintainer) will try to help.
+
+        **Never post your CHAP secrets.** You may want to replace your server's address and target names with placeholders: discussions are public. If you'd rather not share your setup, use the [contact form](https://beamdisk.app/contact/?category=support) instead.
+
+        The [troubleshooting docs](https://beamdisk.app/docs/troubleshooting/get-help/) may already have the answer.
+
+  - type: input
+    id: version
+    attributes:
+      label: BeamDisk version
+      description: BeamDisk → About BeamDisk, with the window in front.
+      placeholder: "0.9.0"
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: Mac model and macOS version
+      placeholder: "MacBook Pro M3 Pro, macOS 27.0.1"
+    validations:
+      required: true
+
+  - type: input
+    id: server
+    attributes:
+      label: Storage server and its software version
+      placeholder: "TrueNAS 25.10"
+    validations:
+      required: true
+
+  - type: input
+    id: network
+    attributes:
+      label: How the Mac and the server are connected
+      placeholder: "2.5 GbE, wired"
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: The end goal, not just the step that's failing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Steps you've already taken, settings you've changed, docs you've read.
+
+  - type: textarea
+    id: state
+    attributes:
+      label: The disk's state, last event and recent messages
+      description: The disk's state in BeamDisk and since when, the **Last event** on its page, and BeamDisk's **Recent messages** (the clock button at the bottom of the sidebar), with their times.
+      render: text
