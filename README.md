@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <strong>Fast iSCSI for Macs with Apple Silicon.</strong><br/>
-  Your storage server's disks in Finder and Time Machine. No kernel extension.
+  <strong>High Performance iSCSI for Macs with Apple Silicon.</strong><br/>
+  Your storage server's disks in Finder and Time Machine. No kernel extension that requires downgrading your Mac's security like legacy solutions.
 </p>
 
 <p align="center">
@@ -32,7 +32,7 @@
 
 ## What is BeamDisk?
 
-BeamDisk connects a Mac with Apple Silicon to iSCSI storage on a server or SAN. The disk shows up in Finder, Disk Utility and Time Machine like a drive plugged into the Mac, reads at over 1 GB/s on 10 GbE, and needs no kernel extension or change to the Mac's security settings. It's free to download and free for home use; business use needs a license.
+BeamDisk connects a Mac with Apple Silicon to iSCSI storage on a server or SAN. The disk shows up in Finder, Disk Utility and Time Machine like a drive plugged into the Mac, easily saturating a 10 Gigabit Ethernet connection, and needs no kernel extension or change to the Mac's security settings. It's free to download and free for home use; business use needs a license.
 
 <p align="center">
   <picture>
@@ -48,7 +48,7 @@ BeamDisk connects a Mac with Apple Silicon to iSCSI storage on a server or SAN. 
 - **No kernel extension** - installs from the App Store like any app. Turn it on once in System Settings: no Recovery-mode restarts, no Reduced Security.
 - **Line-rate on 10 GbE** - over 99% of what the link can carry, reading and writing. [The benchmarks](https://beamdisk.app/benchmarks/) show every run and what it ran on.
 - **Finds your disks** - enter your server's address and BeamDisk lists every disk it offers this Mac. Tick the ones you want and name them.
-- **Time Machine to your server** - use an iSCSI disk as a Time Machine destination, after a one-time setup.
+- **Time Machine to your server** - use an iSCSI disk as a Time Machine destination for better performance and resiliency than SMB.
 - **Rides out outages** - if the server stops answering, writes are held for up to 60 seconds and BeamDisk reconnects by itself.
 - **One Mac at a time, enforced** - exclusive access stops a second computer from writing to the disk and corrupting it.
 - **Live in the menu bar** - throughput and IOPS at a glance, with graphs and p50 / p99 latency kept for 7 days.
