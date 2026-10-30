@@ -8,13 +8,13 @@ If you need other assets, a review build, or want to coordinate on an embargo, [
 
 ## Boilerplate
 
-> BeamDisk connects a Mac with Apple Silicon to iSCSI storage on a server or SAN. The disk shows up in Finder, Disk Utility and Time Machine like a drive plugged into the Mac, reads at over 1 GB/s on 10 GbE, and needs no kernel extension or change to the Mac's security settings. It's free to download and free for home use; business use needs a license.
+> BeamDisk connects a Mac with Apple Silicon to iSCSI storage on a server or SAN. The disk shows up in Finder, Disk Utility and Time Machine like a drive plugged into the Mac, reads and writes at full 10 GbE speed, over 1.2 GB/s, and needs no kernel extension or change to the Mac's security settings. It's free to download and free for home use; business use needs a license.
 
 ## One-liners
 
 - **Tagline:** Beam your LUNs to your Mac.
 - **Short description:** Fast iSCSI for Macs with Apple Silicon.
-- **Long description:** An iSCSI initiator for Macs with Apple Silicon. Connect to your storage server or SAN, and its disks appear in Finder and Time Machine like local drives, at over 1 GB/s on 10 GbE. No kernel extension, no Recovery-mode restarts, no lowered security.
+- **Long description:** An iSCSI initiator for Macs with Apple Silicon. Connect to your storage server or SAN, and its disks appear in Finder and Time Machine like local drives, at full 10 GbE speed. No kernel extension, no Recovery-mode restarts, no lowered security.
 
 ## Quick facts
 

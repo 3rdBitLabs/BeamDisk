@@ -46,7 +46,7 @@ BeamDisk connects a Mac with Apple Silicon to iSCSI storage on a server, a NAS, 
 ## Highlights
 
 - **No kernel extension** - installs from the App Store like any app. Turn it on once in System Settings: no Recovery-mode restarts, no Reduced Security.
-- **Line-rate on 10 GbE** - over 99% of what the link can carry, reading and writing. [The benchmarks](https://beamdisk.app/benchmarks/) show every run and what it ran on.
+- **Full 10 GbE speed** - over 99% of what the link can carry, reading and writing. [The benchmarks](https://beamdisk.app/benchmarks/) show every run and what it ran on.
 - **Finds your disks** - enter your server's address and BeamDisk lists every disk it offers this Mac. Tick the ones you want and name them.
 - **Time Machine to your server** - use an iSCSI disk as a Time Machine destination for better performance and resiliency than SMB.
 - **Rides out outages** - if the server stops answering, writes are held for up to 60 seconds and BeamDisk reconnects by itself.
