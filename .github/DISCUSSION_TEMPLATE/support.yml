@@ -6,15 +6,24 @@ body:
       value: |
         Need help getting BeamDisk working, or stuck on a problem? Fill out the basics below and someone in the community (or a maintainer) will try to help.
 
-        **Never post your CHAP secrets.** You may want to replace your server's address and target names with placeholders: discussions are public. If you'd rather not share your setup, use the [contact form](https://beamdisk.app/contact/?category=support) instead.
+        **Never post your CHAP secrets.** The support summary leaves out your addresses and names. Anything you type yourself is public too: you may want to replace your server's address and target names with placeholders. If you'd rather not share your setup, use the [contact form](https://beamdisk.app/contact/?category=support) instead.
+
+        **Diagnostics files stay private.** Don't attach one here: send it with **Email…** in BeamDisk's **Report a Problem**, and quote its reference in your post.
 
         The [troubleshooting docs](https://beamdisk.app/docs/troubleshooting/get-help/) may already have the answer.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Support summary
+      description: "In BeamDisk, choose **Copy Support Summary** in the quick menu's **Help** submenu, then paste it here. It has BeamDisk's version, your Mac, each server and disk with its state, and BeamDisk's recent messages, with your addresses and names taken out. If your BeamDisk doesn't have it yet, fill in the fields below instead."
+      render: text
 
   - type: input
     id: version
     attributes:
       label: BeamDisk version
-      description: BeamDisk → About BeamDisk, with the window in front.
+      description: BeamDisk → About BeamDisk, with the window in front. It's also the summary's second line.
       placeholder: "0.9.0"
     validations:
       required: true
@@ -23,9 +32,8 @@ body:
     id: system
     attributes:
       label: Mac model and macOS version
+      description: Not needed if you pasted the support summary.
       placeholder: "MacBook Pro M3 Pro, macOS 27.0.1"
-    validations:
-      required: true
 
   - type: input
     id: server
@@ -59,5 +67,5 @@ body:
     id: state
     attributes:
       label: The disk's state, last event and recent messages
-      description: The disk's state in BeamDisk and since when, the **Last event** on its page, and BeamDisk's **Recent messages** (the clock button at the bottom of the sidebar), with their times.
+      description: Not needed if you pasted the support summary. Otherwise, the disk's state in BeamDisk and since when, the **Last event** on its page, and BeamDisk's **Recent messages** (the clock button at the bottom of the sidebar), with their times.
       render: text
